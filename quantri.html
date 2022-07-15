@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/js/jquery.min.js">
+    <link rel="stylesheet" href="./assets/css/quantri.css">
+    <link rel="stylesheet" href="./assets/css/gril.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="grid wide  ">
+            <div class="row no-gutters ">
+                <div class="header-logo l-4 ">
+                    <img src="./assets/img/clickbuy.png" alt="ảnh bìa " class="anh-bia">
+                </div>
+
+                <div class="heder-login l-4">
+                    <h1>Quản trị nội dung </h1>
+                </div>
+
+                <div class="header-help l-4">
+                    <h2>TRỢ GIÚP ?</h2>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="grid wide">
+            <ul>
+                <li><a href="trangchu.html"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
+                            class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512">
+                            <path fill="currentColor"
+                                d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
+                            </path>
+                        </svg>Trang chủ </a>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                        class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                        </path>
+                    </svg>
+                </li>
+                <li><a>Đăng nhập </a><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                        data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                        </path>
+                    </svg></li>
+                <li><a href="">Quản trị</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- cotent star -->
+    <section class="section row">
+        <!-- <div class="section-left row no-gutters l-3">
+            <div class="section-menu-quantri">
+                <ul>
+
+                    <li class="ti-home a"> <a href="">Trang chủ </a> </li>
+                    <li class="ti-mobile a"> <a href="">Quản lý điện thoại </a> </li>
+                    <li class="ti-shopping-cart"> <a href="">Quản lý đơn hàng chưa xác thực </a> </li>
+                    <li class="ti-shopping-cart-full "> <a href="">Quản lý đơn hàng đa xác thực </a></li>
+                    <li class="ti-truck "> <a href="">Quản lý đơn hàng dã giao </a> </li>
+                    <li class="ti-id-badge "> <a href="">Quản lý nhà cung cấp </a> </li>
+                    <li class="ti-align-justify"> <a href="">Quản lý nhập hàng </a></li>
+                    <li class="ti-money "> <a href="">Thống kê doanh thu </a> </li>
+
+                </ul>
+            </div>
+            <input type="checkbox" hidden class="nav-input" name="" id="nav-section-list">
+        </div> -->
+ 
+        <div class="section-right row no-gutters l-12">
+
+            <div class="tab">
+                <button class="tablinks ti-home" onclick="openCity(event, 'list-0')"  ><a href="./trangchu.html">Trang chủ </a></button>
+                <button class="tablinks ti-mobile" onclick="openCity(event, 'list-1')"id="defaultOpen">Quản lý điện thoại </button>
+                <button class="tablinks ti-shopping-cart" onclick="openCity(event, 'list-2')">Quản lý đơn hàng chưa xác thực </button>
+                <button class="tablinks ti-shopping-cart-full" onclick="openCity(event, 'list-3')">Quản lý đơn hàng đa xác thực </button>
+                <button class="tablinks ti-truck " onclick="openCity(event, 'list-4')">Quản lý đơn hàng dã giao </button>
+                <button class="tablinks ti-id-badge" onclick="openCity(event, 'list-5')">Quản lý nhà cung cấp</button>
+                <button class="tablinks ti-align-justify" onclick="openCity(event, 'list-6')">Quản lý nhập hàng</button>
+                <button class="tablinks ti-money" onclick="openCity(event, 'list-7')">Thống kê doanh thu</button>
+            </div> 
+ 
+            <div  id="list-1"class="tabcontent">
+                <div class="add-product-type">
+                    <h3>Điện thoại</h3>
+                    <button type="button" class="button-add-type">Thêm điện thoại</button>
+                </div>
+                <div class="product-type-cen">
+                    <form>
+                        <table class="table-product-type">
+                            <tr>
+                                <th>Mã điện thoại</th>
+                                <th>Tên điện thoại</th>
+                                <th>Mã loại</th>
+                                <th>Hình ảnh </th>
+                                <th>Màn hình</th>
+                                <th>Phân giải</th>
+                                <th>Số lượng</th>
+                                <th>Giá</th>
+                                <th>Sửa</th>
+                                <th>Xóa</th>
+                            </tr>
+
+                            <tr id="phone-1">
+                                <td>M01</td>
+                                <td>iPhone 7 Plus</td>
+                                <td>ML01</td>
+                                <td>
+                                    <img src="./assets/image/apple/iphone11_64gb.png" class="phone_img">
+                                </td>
+                                <td>5.5 inches</td>
+                                <td>1080x1920</td>
+                                <td>20</td>
+                                <td>959000</td>
+                                <td><button class="btn_edit ti-pencil-alt"></button></td>
+                                <td><button class="btn_remove ti-trash" onclick="xoa1('phone_1')"></button></td>
+                            </tr>
+
+                            <tr id="phone-2">
+                                <td>M02</td>
+                                <td>iPhone 11 Pro Max Plus</td>
+                                <td>ML01</td>
+                                <td><img src="./assets/image/apple/apple_iphone7plus_32gb.png" alt="" class="phone_img">
+                                </td>
+                                <td>6.5 inches</td>
+                                <td>2648x1248</td>
+                                <td>10</td>
+                                <td>28990000</td>
+                                <td><button class="btn_edit ti-pencil-alt"></button></td>
+                                <td><button class=" btn_remove ti-trash" onclick="xoa1('phone_2')"></button></td>
+                            </tr>
+                            <tr id="phone-3">
+                                <td>M03</td>
+                                <td>iPhone 11</td>
+                                <td>ML01</td>
+                                <td><img src="./assets/image/apple/apple_iphoneXsmax_256gb.png" alt=""
+                                        class="phone_img"></td>
+                                <td>6.1 inches</td>
+                                <td>1792x828</td>
+                                <td>20</td>
+                                <td>20450000</td>
+                                <td><button class="btn_edit ti-pencil-alt"></button></td>
+                                <td><button class="btn_remove ti-trash" onclick="xoa1('phone_3')"></button></td>
+                            </tr>
+                            <tr id="phone-4">
+                                <td>M04</td>
+                                <td>iPhone 11</td>
+                                <td>ML01</td>
+                                <td><img src="./assets/image/apple/iphone11_128gb.png " alt="" class="phone_img"></td>
+                                <td>6.1 inches</td>
+                                <td>1792x828</td>
+                                <td>20</td>
+                                <td>17990000</td>
+                                <td><button class="btn_edit ti-pencil-alt"></button></td>
+                                <td><button class="btn_remove ti-trash" onclick="xoa1('phone_4')"></button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+            <div  id="list-2"class="tabcontent">
+                <div class="add-product-type">
+                    <h3>Đơn hàng</h3>
+
+                </div>
+                <div class="product-type-cen">
+                    <form>
+                        <table class="table-product-type">
+                            <tr>
+                                <th>Mã đơn hàng</th>
+                                <th>Ngày tạo</th>
+                                <th>Thành viên</th>
+                                <th>Địa chỉ giao hàng</th>
+                                <th>Số điện thoại</th>
+                                <th>Mã khách hàng</th>
+                                <th>Trạng thái</th>
+                                <th>Xác thực</th>
+                                <th>Xóa</th>
+                            </tr>
+
+                            <tr id="order_1">
+                                <td>MDH01</td>
+                                <td>28/06/2020</td>
+                                <td>200000</td>
+                                <td>Đội 10- Phượng Hoàng - Hùng Cường - TP.Hưng Yên</td>
+                                <td>0972373645</td>
+                                <td>MKH1</td>
+                                <td>Đã thanh toán</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_remove" onclick="xoa1('order_1')"><svg aria-hidden="true"
+                                            focusable="false" data-prefix="far" data-icon="trash-alt"
+                                            class="svg-inline--fa fa-trash-alt fa-w-14" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                            onclick="productDelete('1')">
+                                            <path fill="currentColor"
+                                                d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                            <tr id="order_2">
+                                <td>MDH02</td>
+                                <td>28/06/2020</td>
+                                <td>200000</td>
+                                <td>Phạm Ngũ Lão - TP.Hưng Yên</td>
+                                <td>0975973645</td>
+                                <td>MKH2</td>
+                                <td>Chưa thanh toán</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_remove" onclick="xoa1('order_2')"><svg aria-hidden="true"
+                                            focusable="false" data-prefix="far" data-icon="trash-alt"
+                                            class="svg-inline--fa fa-trash-alt fa-w-14" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                            onclick="productDelete('1')">
+                                            <path fill="currentColor"
+                                                d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                            <tr id="order_3">
+                                <td>MDH03</td>
+                                <td>28/06/2020</td>
+                                <td>200000</td>
+                                <td>Nguyễn Văn Linh - TP.Hưng Yên</td>
+                                <td>0972373645</td>
+                                <td>MKH3</td>
+                                <td>Chưa thanh toán</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_remove" onclick="xoa1('order_3')"><svg aria-hidden="true"
+                                            focusable="false" data-prefix="far" data-icon="trash-alt"
+                                            class="svg-inline--fa fa-trash-alt fa-w-14" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                            onclick="productDelete('1')">
+                                            <path fill="currentColor"
+                                                d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                            <tr id="order_4">
+                                <td>MDH04</td>
+                                <td>28/06/2020</td>
+                                <td>200000</td>
+                                <td>Trần Hưng Đạo - TP.Hưng Yên</td>
+                                <td>0972373645</td>
+                                <td>MKH4</td>
+                                <td>Đã thanh toán</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_remove" onclick="xoa1('order_4')"><svg aria-hidden="true"
+                                            focusable="false" data-prefix="far" data-icon="trash-alt"
+                                            class="svg-inline--fa fa-trash-alt fa-w-14" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                            onclick="productDelete('1')">
+                                            <path fill="currentColor"
+                                                d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+            <div  id="list-3"class="tabcontent">
+                <div class="add-product-type">
+                    <h3>Đơn hàng đã xác thực</h3>
+
+                </div>
+                <div class="product-type-cen">
+                    <form>
+                        <table class="table-product-type">
+                            <tr>
+                                <th>Mã đơn hàng</th>
+                                <th>Ngày tạo</th>
+                                <th>Thành tiền</th>
+                                <th>Địa chỉ giao hàng </th>
+                                <th>Số điện thoại</th>
+                                <th>Mã khách hàng</th>
+                                <th>Trạng thái</th>
+                                <th>Chuyển hàng</th>
+                            </tr>
+                            <tr id="order_1">
+                                <td>MDH01</td>
+                                <td>28/06/2020</td>
+                                <td>200000</td>
+                                <td>Đội 10- Phượng Hoàng - Hùng Cường - TP.Hưng Yên</td>
+                                <td>0972373645</td>
+                                <td>MKH1</td>
+                                <td>Đã thanh toán</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                            <tr id="order_2">
+                                <td>MDH02</td>
+                                <td>28/06/2020</td>
+                                <td>200000</td>
+                                <td>Phạm Ngũ Lão - TP.Hưng Yên</td>
+                                <td>0975973645</td>
+                                <td>MKH2</td>
+                                <td>Chưa thanh toán</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                            <tr id="order_3">
+                                <td>MDH03</td>
+                                <td>28/06/2020</td>
+                                <td>200000</td>
+                                <td>Nguyễn Văn Linh - TP.Hưng Yên</td>
+                                <td>0972373645</td>
+                                <td>MKH3</td>
+                                <td>Chưa thanh toán</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                            <tr id="order_4">
+                                <td>MDH04</td>
+                                <td>28/06/2020</td>
+                                <td>200000</td>
+                                <td>Trần Hưng Đạo - TP.Hưng Yên</td>
+                                <td>0972373645</td>
+                                <td>MKH4</td>
+                                <td>Đã thanh toán</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+            <div  id="list-4"class="tabcontent">
+                <div class="add-product-type">
+                    <h3>Đơn hàng đã giao</h3>
+
+                </div>
+                <div class="product-type-cen">
+                    <form>
+                        <table class="table-product-type">
+                            <tr>
+                                <th>Mã đơn hàng</th>
+                                <th>Ngày tạo</th>
+                                <th>Thành tiền</th>
+                                <th>Địa chỉ giao hàng </th>
+                                <th>Số điện thoại</th>
+                                <th>Mã khách hàng</th>
+                                <th>Trạng thái</th>
+                                <th>Giao hàng thành công</th>
+                                <th>Báo trả hàng</th>
+                                <th>Báo đổi hàng</th>
+                            </tr>
+                            <tr>
+                                <td>MDH01</td>
+                                <td>28/06/2020</td>
+                                <td>200000</td>
+                                <td>Đội 10- Phượng Hoàng - Hùng Cường - TP.Hưng Yên</td>
+                                <td>0972373645</td>
+                                <td>MKH1</td>
+                                <td>Đã thanh toán</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                            <tr>
+                                <td>MDH02</td>
+                                <td>28/06/2020</td>
+                                <td>200000</td>
+                                <td>Phạm Ngũ Lão - TP.Hưng Yên</td>
+                                <td>0975973645</td>
+                                <td>MKH2</td>
+                                <td>Chưa thanh toán</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                            <tr>
+                                <td>MDH03</td>
+                                <td>28/06/2020</td>
+                                <td>200000</td>
+                                <td>Nguyễn Văn Linh - TP.Hưng Yên</td>
+                                <td>0972373645</td>
+                                <td>MKH3</td>
+                                <td>Chưa thanh toán</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                            <tr>
+                                <td>MDH04</td>
+                                <td>28/06/2020</td>
+                                <td>200000</td>
+                                <td>Trần Hưng Đạo - TP.Hưng Yên</td>
+                                <td>0972373645</td>
+                                <td>MKH4</td>
+                                <td>Đã thanh toán</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="thumbtack" class="svg-inline--fa fa-thumbtack fa-w-12" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="currentColor"
+                                                d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+            <div  id="list-5"class="tabcontent">
+                <div class="add-product-type">
+                    <h3>Nhà cung cấp</h3>
+
+                </div>
+                <div class="product-type-cen">
+                    <form>
+                        <table class="table-product-type">
+                            <tr>
+                                <th>Mã nhà cung cấp</th>
+                                <th>Tên nhà cung cấp</th>
+                                <th>Số điện thoại</th>
+                                <th>Địa chỉ</th>
+                                <th>Email</th>
+                                <th>Sửa</th>
+                                <th>Xóa</th>
+                            </tr>
+                            <tr id="supp_1">
+                                <td>NCC01</td>
+                                <td>Công Ty TNHH Viễn Thông Xuyên Á</td>
+                                <td>(028) 39638998</td>
+                                <td>395C Minh Phụng, P. 10, Q. 11, Tp. Hồ Chí Minh (TPHCM)</td>
+                                <td>xuyenamobile@gmail.com</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="far"
+                                            data-icon="edit" class="svg-inline--fa fa-edit fa-w-18" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                            <path fill="currentColor"
+                                                d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_remove" onclick="xoa1('supp_1')"><svg aria-hidden="true"
+                                            focusable="false" data-prefix="far" data-icon="trash-alt"
+                                            class="svg-inline--fa fa-trash-alt fa-w-14" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                            <tr id="supp_2">
+                                <td>NCC02</td>
+                                <td>Công Ty Viễn Thông Đức Huy</td>
+                                <td>0971151515</td>
+                                <td>187A Đường 3/2, P. 11, Q. 10, Tp. Hồ Chí Minh (TPHCM)</td>
+                                <td>duchuymobile2011@gmail.com</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="far"
+                                            data-icon="edit" class="svg-inline--fa fa-edit fa-w-18" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                            <path fill="currentColor"
+                                                d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_remove" onclick="xoa1('supp_2')"><svg aria-hidden="true"
+                                            focusable="false" data-prefix="far" data-icon="trash-alt"
+                                            class="svg-inline--fa fa-trash-alt fa-w-14" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                            <tr id="supp_3">
+                                <td>NCC03</td>
+                                <td>Công Ty TNHH Giải Pháp CNTT Hoàn Vũ</td>
+                                <td>0976060324</td>
+                                <td>265 Hoàng Hoa Thám , P. 13 , Q. Tân Bình. Tp. Hồ Chí Minh </td>
+                                <td>hvtransco@gmail.com</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="far"
+                                            data-icon="edit" class="svg-inline--fa fa-edit fa-w-18" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                            <path fill="currentColor"
+                                                d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_remove" onclick="xoa1('supp_3')"><svg aria-hidden="true"
+                                            focusable="false" data-prefix="far" data-icon="trash-alt"
+                                            class="svg-inline--fa fa-trash-alt fa-w-14" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                            <tr id="supp_4">
+                                <td>NCC04</td>
+                                <td>Trung Tâm Kỹ Thuật Số TECHLAND</td>
+                                <td>(024) 62700333</td>
+                                <td>16 P. Tràng Thi, Q. Hoàn Kiếm, Hà Nội</td>
+                                <td>techlandhn@gmail.com</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="far"
+                                            data-icon="edit" class="svg-inline--fa fa-edit fa-w-18" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                            <path fill="currentColor"
+                                                d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_remove" onclick="xoa1('supp_4')"><svg aria-hidden="true"
+                                            focusable="false" data-prefix="far" data-icon="trash-alt"
+                                            class="svg-inline--fa fa-trash-alt fa-w-14" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                            <tr id="supp_5">
+                                <td>NCC05</td>
+                                <td>Công Ty TNHH TSmobile</td>
+                                <td>(028) 39254966</td>
+                                <td>168 Lê Lai, P. Bến Thành, Q. 1, Tp. Hồ Chí Minh (TPHCM)</td>
+                                <td>ledung7730@gmail.com</td>
+                                <td><button class="btn_edit"><svg aria-hidden="true" focusable="false" data-prefix="far"
+                                            data-icon="edit" class="svg-inline--fa fa-edit fa-w-18" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                            <path fill="currentColor"
+                                                d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z">
+                                            </path>
+                                        </svg></button></td>
+                                <td><button class="btn_remove" onclick="xoa1('supp_5')"><svg aria-hidden="true"
+                                            focusable="false" data-prefix="far" data-icon="trash-alt"
+                                            class="svg-inline--fa fa-trash-alt fa-w-14" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z">
+                                            </path>
+                                        </svg></button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+            <div  id="list-6"class="tabcontent">
+                <div class="add-product-type">
+                    <h3>Hóa đơn nhập</h3>
+
+                </div>
+                <div class="product-type-cen">
+                    <form>
+                        <table class="table-product-type">
+                            <tr>
+                                <th>Mã hóa đơn nhập</th>
+                                <th>Mã nhà cung cấp</th>
+                                <th>Ngày nhập</th>
+                                <th>Thành tiền</th>
+                            </tr>
+                            <tr>
+                                <td>HD1</td>
+                                <td>NCC01</td>
+                                <td>29/06/2020</td>
+                                <td>39800000</td>
+                            </tr>
+                            <tr>
+                                <td>HD2</td>
+                                <td>NCC02</td>
+                                <td>29/06/2020</td>
+                                <td>40000000</td>
+                            </tr>
+                            <tr>
+                                <td>HD3</td>
+                                <td>NCC01</td>
+                                <td>29/06/2020</td>
+                                <td>60000000</td>
+                            </tr>
+                            <tr>
+                                <td>HD4</td>
+                                <td>NCC01</td>
+                                <td>29/06/2020</td>
+                                <td>39800000</td>
+                            </tr>
+                            <tr>
+                                <td>HD5</td>
+                                <td>NCC01</td>
+                                <td>29/06/2020</td>
+                                <td>39800000</td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+            <div  id="list-7"class="tabcontent" >
+                <div class="add-product-type">
+                    <h3>Chi tiết hóa đơn</h3>
+
+                </div>
+                <div class="product-type-cen">
+                    <form>
+                        <table class="table-product-type">
+                            <tr>
+                                <th>Mã hóa đơn nhập</th>
+                                <th>Mã điện thoại</th>
+                                <th>Số lượng</th>
+                                <th>Đơn giá</th>
+                            </tr>
+                            <tr>
+                                <td>HD1</td>
+                                <td>M01</td>
+                                <td>20</td>
+                                <td>1990000</td>
+                            </tr>
+                            <tr>
+                                <td>HD2</td>
+                                <td>M02</td>
+                                <td>20</td>
+                                <td>2000000</td>
+                            </tr>
+                            <tr>
+                                <td>HD3</td>
+                                <td>M03</td>
+                                <td>20</td>
+                                <td>3000000</td>
+                            </tr>
+                            <tr>
+                                <td>HD4</td>
+                                <td>M04</td>
+                                <td>20</td>
+                                <td>1990000</td>
+                            </tr>
+                            <tr>
+                                <td>HD5</td>
+                                <td>M05</td>
+                                <td>20</td>
+                                <td>1990000</td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+
+            <script>
+                function openCity(evt, cityName) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                  }
+                  document.getElementById(cityName).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+                
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+                </script>
+
+        </div>
+        
+
+    </section>
+    <!-- content end -->
+
+
+    <footer class="footer">
+        <div class="grid wide footer-border">
+            <div class="footer-for row no-gutters">
+                <div class="footer-hlep">
+                    <a href=""> <i class="ti-help-alt"> </i></a>
+                    <span>Hỗ Trợ-Dịch Vụ</span>
+                    <ul>
+                        <li> <a href="#">Hướng dẫn mua hàng </a> </li>
+                        <li> <a href="#">Chính sách mua hàng </a> </li>
+                        <li> <a href="#">Chính sách bảo hành </a> </li>
+                        <li> <a href="#">Gửi phản hồi và ý kiến </a> </li>
+                        <li> <a href="#">Mua hàng từ xa và nhận hàng </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-information">
+                    <a href=""> <i class="ti-info-alt"> </i></a>
+                    <span>Thông Tin Liên Hệ</span>
+                    <ul>
+                        <li>
+                            <a href=""> <i class="ti-location-pin"> </i></a>
+                            <span>Cẩm La-Cẩm Ninh-Ân Thi-Hưng Yên</span>
+                        </li>
+                        <li>
+                            <a href=""> <i class="ti-mobile"> </i></a>
+                            <span>0968996142</span>
+                        </li>
+                        <li>
+                            <a href=""> <i class="ti-email"> </i></a>
+                            <span>Phuchuong20102k1@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-pay">
+                    <a href=""> <i class="ti-shopping-cart-full"> </i></a>
+                    <span>Thanh Toán Miễn Phí</span>
+                    <div class="footer-pay-img">
+                        <img src="./assets/image/masterCard.jpg" alt="thẻ">
+                    </div>
+
+                </div>
+                <div class="footer-email">
+                    <span>Theo Dõi Chúng Tôi</span>
+                    <p>Nhập email để nhận những thông tin hữu ích</p>
+                    <div class="footer-resgister">
+                        <input class="email" type="text" placeholder="Email của bạn...">
+                        <button class="dangki">Đăng kí</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/giohang.css">
+    <link rel="stylesheet" href="./assets/css/gril.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="grid wide  ">
+            <div class="row no-gutters ">
+                <div class="header-logo l-4 ">
+                    <img src="./assets/img/clickbuy.png" alt="ảnh bìa " class="anh-bia">
+                </div>
+
+                <div class="heder-login l-4">
+                    <h1> </h1>
+                </div>
+
+                <div class="header-help l-4">
+                    <h2>TRỢ GIÚP ?</h2>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="grid wide">
+            <ul>
+                <li><a href="trangchu.html"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
+                            class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512">
+                            <path fill="currentColor"
+                                d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
+                            </path>
+                        </svg>Trang chủ </a>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                        class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                        </path>
+                    </svg>
+                </li>
+                <li><a>Giỏ hàng </a><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                        data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                        </path>
+                    </svg></li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- giữa trang -->
+    <section class="body">
+        <div class="grid wide container">
+            <div class="row list-head">
+                <div class="col l-2-4">
+                    <div class="list-head-item">
+                        Sản phẩm
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="list-head-item">
+                        Giá
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="list-head-item">
+                        Số lượng
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="list-head-item">
+                        Tổng
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="list-head-item" style="border-right: none;">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-content">
+            </div>
+
+        </div>
+        <div class="grid wide">
+            <div class="row buy">
+                <div class="col l-2-4">
+                    <div class="list-head-item remove in">
+                        Thanh Toán
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-body">
+            <!-- form login -->
+            <form id="form-1" class="auth-form-form">
+                <div class="form-group">
+                    <svg class="Input_icon-3bJ0I" width="16" height="16" viewBox="0 0 16 16">
+                        <path d="M0 0h16v16H0V0z" fill="none"></path>
+                        <path
+                            d="M15.2 13.1L8.6 1.6c-.2-.4-.9-.4-1.2 0L.8 13.1c-.1.2-.1.5 0 .7.1.2.3.3.6.3h13.3c.2 0 .5-.1.6-.3.1-.2.1-.5-.1-.7zM8.7 12H7.3v-1.3h1.3V12zm0-2.7H7.3v-4h1.3v4z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <input name="fullname" type="text" class="auth-form-input" placeholder="Tên của bạn">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <svg class="Input_icon-3bJ0I" width="16" height="16" viewBox="0 0 16 16">
+                        <path d="M0 0h16v16H0V0z" fill="none"></path>
+                        <path
+                            d="M15.2 13.1L8.6 1.6c-.2-.4-.9-.4-1.2 0L.8 13.1c-.1.2-.1.5 0 .7.1.2.3.3.6.3h13.3c.2 0 .5-.1.6-.3.1-.2.1-.5-.1-.7zM8.7 12H7.3v-1.3h1.3V12zm0-2.7H7.3v-4h1.3v4z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <input type="text" class="auth-form-input" placeholder="Email">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <svg class="Input_icon-3bJ0I" width="16" height="16" viewBox="0 0 16 16">
+                        <path d="M0 0h16v16H0V0z" fill="none"></path>
+                        <path
+                            d="M15.2 13.1L8.6 1.6c-.2-.4-.9-.4-1.2 0L.8 13.1c-.1.2-.1.5 0 .7.1.2.3.3.6.3h13.3c.2 0 .5-.1.6-.3.1-.2.1-.5-.1-.7zM8.7 12H7.3v-1.3h1.3V12zm0-2.7H7.3v-4h1.3v4z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <input type="text" class="auth-form-input" placeholder="Địa chỉ">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <svg class="Input_icon__3bJ0I" width="16" height="16" viewBox="0 0 16 16">
+                        <path d="M0 0h16v16H0V0z" fill="none"></path>
+                        <path
+                            d="M15.2 13.1L8.6 1.6c-.2-.4-.9-.4-1.2 0L.8 13.1c-.1.2-.1.5 0 .7.1.2.3.3.6.3h13.3c.2 0 .5-.1.6-.3.1-.2.1-.5-.1-.7zM8.7 12H7.3v-1.3h1.3V12zm0-2.7H7.3v-4h1.3v4z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <input type="text" class="auth-form-input" placeholder="Số điện thoại">
+                    <span class="form-message"></span>
+                </div>
+                <input class="btn-print" type="button" value="Print" style="cursor: pointer;" />
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-print">
+        <div class="modal-overlay-print"></div>
+        <div class="modal-body">
+            <!-- form login -->
+            <form class="form-print">
+                <div class="print-title">
+                    <h2>
+                        <span></span>
+                    </h2>
+                </div>
+                <div class="info">
+                    <div class="info-item">
+                        <span class="inf-_customer">
+
+                        </span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-customer">
+
+                        </span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-customer">
+
+                        </span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-customer">
+
+                        </span>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="title-hang">
+                        <div class="title-hang-item">
+                            Sản phẩm
+                        </div>
+                        <div class="title-hang-item">
+                            Giá
+                        </div>
+                        <div class="title-hang-item">
+                            Số lượng
+                        </div>
+                        <div class="title-hang-item">
+                            Thành tiền
+                        </div>
+                    </div>
+                    <div class="content-hang">
+                        <!-- <div class="content__hang-item">
+                            <div class="title__hang-item">
+                                classico1
+                            </div>
+                            <div class="title__hang-item">
+                                700.000đ
+                            </div>
+                            <div class="title__hang-item">
+                                2
+                            </div>
+                            <div class="title__hang-item">
+                                1.400.000đ
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="tong">
+                        <div class="tong-title">
+                            Tổng tiền
+                        </div>
+                        <div class="tong-tien">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-end">
+                    <div class="user">
+                        Khách Hàng
+                    </div>
+                    <div class="user">
+                        Nhân viên bán Hàng
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        var list = JSON.parse(localStorage.getItem('cart'));
+        function LoadData() {
+            var str = "";
+            var n = 0;
+            var t = 0;
+            for (x of list) {
+                str += `  <div class="row item_card">
+                        <div class="col l-2-4">
+                            <div class="list-head-item">
+                                <img class="img-card" src="${x.image}" alt="">
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="list-head-item">
+                                ${x.price}
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="list-head-item">
+                                <input value="`+ x.quantity + `" type="number" name="points" min="0" max="100" step="1">
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="list-head-item">
+                                ${x.price * x.quantity}
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div onclick="Xoa(`+ x.id + `)" class="list-head-item remove" style="border-right: none;">
+                                Xoá khỏi giỏ
+                            </div>
+                        </div>
+                    </div>
+                 `;
+            }
+            document.querySelector(".card-content").innerHTML = str;
+            const btn__sl = document.querySelectorAll('.list-head-item input');
+            btn__sl.forEach((btn, index) => {
+                btn.onblur = function () {
+                    list[index].quantity = Number(btn.value);
+                    LoadData();
+                    updateCart();
+                }
+            })
+            /* $("#spTong").text(t); */
+        }
+        function XoaCart() {
+            localStorage.setItem('cart', null);
+            location.reload();
+        }
+        function Xoa(id) {
+            var index = list.findIndex(x => x.id == id);
+            if (index >= 0) {
+                list.splice(index, 1);
+            }
+            LoadData();
+        }
+        function updateQuantity(id) {
+            var quantity = Number($('#q_' + id).val());
+            var index = list.findIndex(x => x.id == id);
+            if (index >= 0 && list[index].quantity >= 1) {
+                list[index].quantity = quantity;
+            }
+            LoadData();
+        }
+        function updateCart() {
+            localStorage.setItem('cart', JSON.stringify(list));
+            console.log('xong');
+        }
+        LoadData();
+    </script>
+    <!-- chân trang -->
+    <footer class="footer">
+        <div class="grid wide footer-border">
+            <div class="footer-for row no-gutters">
+                <div class="footer-hlep">
+                    <a href=""> <i class="ti-help-alt"> </i></a>
+                    <span>Hỗ Trợ-Dịch Vụ</span>
+                    <ul>
+                        <li> <a href="#">Hướng dẫn mua hàng </a> </li>
+                        <li> <a href="#">Chính sách mua hàng </a> </li>
+                        <li> <a href="#">Chính sách bảo hành </a> </li>
+                        <li> <a href="#">Gửi phản hồi và ý kiến </a> </li>
+                        <li> <a href="#">Mua hàng từ xa và nhận hàng </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-information">
+                    <a href=""> <i class="ti-info-alt"> </i></a>
+                    <span>Thông Tin Liên Hệ</span>
+                    <ul>
+                        <li>
+                            <a href=""> <i class="ti-location-pin"> </i></a>
+                            <span>Cẩm La-Cẩm Ninh-Ân Thi-Hưng Yên</span>
+                        </li>
+                        <li>
+                            <a href=""> <i class="ti-mobile"> </i></a>
+                            <span>0968996142</span>
+                        </li>
+                        <li>
+                            <a href=""> <i class="ti-email"> </i></a>
+                            <span>Phuchuong20102k1@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-pay">
+                    <a href=""> <i class="ti-shopping-cart-full"> </i></a>
+                    <span>Thanh Toán Miễn Phí</span>
+                    <div class="footer-pay-img">
+                        <img src="./assets/image/masterCard.jpg" alt="thẻ">
+                    </div>
+
+                </div>
+                <div class="footer-email">
+                    <span>Theo Dõi Chúng Tôi</span>
+                    <p>Nhập email để nhận những thông tin hữu ích</p>
+                    <div class="footer-resgister">
+                        <input class="email" type="text" placeholder="Email của bạn...">
+                        <button class="dangki">Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
