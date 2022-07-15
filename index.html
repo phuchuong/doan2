@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/trangchu.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
+    <title>Cửa hàng điện thoại NPC</title>
+ 
+
+</head>
+
+<body>
+
+    <header id="header-trangchu">
+        <div class="header-bia">
+            <nav class="row no-gutters">
+                <div class="header-logo">
+                    <img src="./assets/img/clickbuy.png" alt="ảnh bìa " class="anh-bia">
+                </div>
+
+                <div class="header-search">
+                    <form action="/action_page.php">
+                        <input type="text" id="mysearch" onkeyup="myFunction()" placeholder="Nhập từ khóa tìm kiếm"
+                            class="header-search-input" name="search">
+
+                        <button> <a href=""> <i class="ti-search"> </i></a></button>
+                    </form>
+                </div>
+
+
+                <!-- <div class="menu-trangchu-2">
+                    <ul id="mymenu1" >
+        
+                        <li><a href="#">Trang chủ</a> </li>
+                        <li><a href="#">Iphone</a></li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Oppo</a></li>
+                        <li><a href="#">Vsmart</a></li>
+                        <li><a href="#">Xiaomi</a></li>
+                        <li><a href="#">Nokia</a></li>
+                         <li><a class="a" href="#">Realme</a></li> 
+                        <i class="fa fa-bars"></i> 
+        
+                    </ul>
+                </div> -->
+
+                <div class="header-menuitem">
+                    <div class="header-menuitem-list">
+                        <ul>
+                            <li class="ti-shopping-cart"><a href="./giohang.html"> Giỏ hàng</a></li>
+                            <li class="header-menuitem-login"><a href="./dangnhap.html">Đăng nhập</a></li>
+                            <!-- <div class="navbar__link-separator"> </div> -->
+                            <li class="header-menuitem-login"><a href="./dangky.html">Đăng ký</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- js tìm kiếm -->
+        <!-- <script>
+            function myFunction() {
+              // Declare variables
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("mysearch");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("mymenu" );
+              li = ul.getElementsByTagName("li");
+            
+              // Loop through all list items, and hide those who don't match the search query
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+        </script> -->
+        <!--  -->
+
+
+        <div id="mymenu" class="menu-trangchu">
+            <ul>
+
+                <li><a href="#">Trang chủ</a> </li>
+                <li><a href="./iphone.html">Iphone</a></li>
+                <li><a href="./samsung.html">Samsung</a></li>
+                <li><a href="./oppo.html">Oppo</a></li>
+                <li><a href="./vsmat.html">Vsmart</a></li>
+                <li><a href="./xiaomi.html">Xiaomi</a></li>
+                <li><a href="./nokia.html">Nokia</a></li>
+                <!-- <li><a class="a" href="#">Realme</a></li> -->
+                <!-- <i class="fa fa-bars"></i> -->
+
+            </ul>
+
+
+        </div>
+        <!-- thanh menu chính -->
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var navbar = document.getElementById("mymenu");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <!-- pc -->
+
+
+
+        <label for="nav-mobi-input" class="ti-menu">
+        </label>
+
+        <input type="checkbox" hidden class="nav-input" name="" id="nav-mobi-input">
+        <label for="nav-mobi-input" class="nav-overplay">
+        </label>
+
+        <label for="nav-mobi-input" class="menu-trangchu-iphone">
+            <ul>
+                <li><a href="#">Trang chủ</a> </li>
+                <li><a href="./iphone.html">Iphone</a></li>
+                <li><a href="./samsung.html">Samsung</a></li>
+                <li><a href="./oppo.html">Oppo</a></li>
+                <li><a href="./vsmat.html">Vsmart</a></li>
+                <li><a href="./xiaomi.html">Xiaomi</a></li>
+                <li><a href="./nokia.html">Nokia</a></li>
+                <!-- <li><a href="#">Realme</a></li> -->
+                <!-- <i class="fa fa-bars"></i> -->
+
+            </ul>
+
+            <label for="nav-mobi-input" class="ti-close"></label>
+        </label>
+
+
+    </header>
+
+    <!-- slide -->
+
+    <section class=" section-1">
+
+        <div class="slide-show">
+            <div class="slide-show-me"><a href=""><img src="./assets/slideimg/slide_01.jpg" alt="slide-1"></a></div>
+            <div class="slide-show-me"><a href=""><img src="./assets/slideimg/slide_02.jpg" alt="slide-1"></a></div>
+            <div class="slide-show-me"><a href=""><img src="./assets/slideimg/slide_03.jpg" alt="slide-1"></a></div>
+            <div class="slide-show-me"><a href=""><img src="./assets/slideimg/slide_04.jpg" alt="slide-1"></a></div>
+            <div class="slide-show-me"><a href=""><img src="./assets/slideimg/slide_06.jpg" alt="slide-1"></a></div>
+            <button class="button black display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button black display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slide-show-me");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+
+
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("slide-show-me");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+
+    </section>
+
+    <section>
+        <div class="content">
+            <!-- section1 start -->
+            <div class="section  ">
+                <div class="box-head row  ">
+                    <a class="box-tittle " href="#">APPLE</a>
+                    <div class="menu-iphone">
+                        <a href="./ttiphone7plus.html">iPhone 7 Plus</a>
+                        <a href="./ttiphone11.html">iPhone 11</a>
+                        <a href="./ttiphone11pro.html">iPhone 11 Pro</a>
+                        <a href="./ttiphone11pro512gb.html">iPhone 11 Pro Max</a>
+                        <a href="./thongtiniphonexsmax.html">iPhone Xs Max</a>
+                    </div>
+                    <a class="more " href="#">Xem tất cả</a>
+                </div>
+                <div class="list-content-apple">
+                    <div class="row-item row no-gutters">
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/apple/apple_iphone7plus_32gb.png" alt="iphone7"
+                                    class="iphone7plus">
+                                <a href="./ttiphone7plus.html">
+                                    <div class="overlay">
+                                        <ol>
+                                            <li>
+                                                Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao
+                                                xài
+                                                đổi trả trong vòng 15 ngày đầu tiên
+                                            </li>
+                                            <li>
+                                                Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                                chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính
+                                                hãng
+                                                VN/A với giá ưu đãi 3.590.000, ...
+                                            </li>
+                                            <li>
+                                                Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                                9.990.000
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="product-name">
+                                <h4>Apple iPhone 7 Plus - 32GB - Chính hãng VN/A</h4>
+
+                                <a onclick="addToCart({id:'01',image:'./assets/image/apple/apple_iphone7plus_32gb.png', price:9.590, name:'iPhone 7 Plus'})"href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/apple/apple_iphoneXsmax_256gb.png" alt="iphone7"
+                                    class="iphone7plus">
+                                <a href="./ttiphonexsmax.html">
+                                    <div class="overlay">
+                                        <ol>
+                                            <li>
+                                                Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao
+                                                xài
+                                                đổi trả trong vòng 15 ngày đầu tiên
+                                            </li>
+                                            <li>
+                                                Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                                chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính
+                                                hãng
+                                                VN/A với giá ưu đãi 3.590.000, ...
+                                            </li>
+                                            <li>
+                                                Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                                9.990.000
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-name">
+                                <h4>Apple iPhone Xsmax - 256GB - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'02',image:'./assets/image/apple/apple_iphoneXsmax_256gb.png', price:9.900, name:'iPhone Xsmax'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/apple/iphone11_128gb.png" alt="iphone7" class="iphone7plus">
+                                <a href="./ttiphone11.html">
+                                    <div class="overlay">
+
+                                        <ol>
+                                            <li>
+                                                Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao
+                                                xài
+                                                đổi trả trong vòng 15 ngày đầu tiên
+                                            </li>
+                                            <li>
+                                                Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                                chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính
+                                                hãng
+                                                VN/A với giá ưu đãi 3.590.000, ...
+                                            </li>
+                                            <li>
+                                                Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                                9.990.000
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-name">
+                                <h4>Apple iPhone 11 - 64GB - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'03',image:'./assets/image/apple/iphone11_128gb.png', price:9.900, name:'iPhone 11'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">19.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/apple/iphone11Promax_512gb.png" alt="iphone7"
+                                    class="iphone7plus">
+                                <a href="./ttiphone11pro512gb.html">
+                                    <div class="overlay">
+                                        <ol>
+                                            <li>
+                                                Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao
+                                                xài
+                                                đổi trả trong vòng 15 ngày đầu tiên
+                                            </li>
+                                            <li>
+                                                Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                                chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính
+                                                hãng
+                                                VN/A với giá ưu đãi 3.590.000, ...
+                                            </li>
+                                            <li>
+                                                Đã bao gồm 10% VAT | Màu Black 29.590.000 - Màu Silver, Rose Gold, Gold:
+                                                29.990.000
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-name">
+                                <h4>Apple iPhone 11 Pro Max - 512GB - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'04',image:'./assets/image/apple/iphone11Promax_512gb.png', price:29.900, name:'iPhone 11 Pro Max'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">29.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/apple/iphone11Pro_64gb.png" alt="iphone7" class="iphone7plus">
+                                <a href="./ttiphone11pro.html">
+                                    <div class="overlay">
+                                        <ol>
+                                            <li>
+                                                Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao
+                                                xài
+                                                đổi trả trong vòng 15 ngày đầu tiên
+                                            </li>
+                                            <li>
+                                                Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                                chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính
+                                                hãng
+                                                VN/A với giá ưu đãi 3.590.000, ...
+                                            </li>
+                                            <li>
+                                                Đã bao gồm 10% VAT | Màu Black 39.590.000 - Màu Silver, Rose Gold, Gold:
+                                                39.990.000
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-name">
+                                <h4>Apple iPhone 11 Pro - 64GB - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'05',image:'./assets/image/apple/iphone11Pro_64gb.png', price:500, name:'iPhone 11 Pro'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">39.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row-item row no-gutters">
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/apple/iphone11Promax_64gb.png" alt="iphone7"
+                                    class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>Apple iPhone 7 Plus - 32GB - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'06',image:'./assets/image/apple/iphone11Promax_64gb.png', price:500, name:'iPhone 7 Plus'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+
+                                <img src="./assets/image/apple/iphone8Plus_64gb.png" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>Apple iPhone 7 Plus - 32GB - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'07 ',image:'./assets/image/apple/iphone8Plus_64gb.png', price:500, name:'iPhone 7 Plus'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/apple/iphoneX_64gb.jpg" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>Apple iPhone 7 Plus - 32GB - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'08',image:'./assets/image/apple/iphoneX_64gb.jpg', price:500, name:'iPhone 7 Plus'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+
+                                <img src="./assets/image/apple/iphone11_64gb.png" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>Apple iPhone 7 Plus - 32GB - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'09',image:'./assets/image/apple/iphone11_64gb.png', price:500, name:'iPhone 7 Plus'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/apple/apple_iphone7plus_32gb.png" alt="iphone7"
+                                    class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>Apple iPhone 7 Plus - 32GB - Chính hãng VN/A</h4>
+
+                                <a onclick="addToCart({id:'10',image:'./assets/image/apple/apple_iphone7plus_32gb.png', price:500, name:'Apple'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section1 end -->
+            <!-- section2 -->
+            <div class="section  ">
+                <div class="box-head row  ">
+                    <a class="box-tittle " href="#">SAMSUNG</a>
+                    <div class="menu-iphone">
+                        <a href="#">Samsung Galaxy S20</a>
+                        <a href="#">Samsung Galaxy A31</a>
+                        <a href="#">Samsung Galaxy A51</a>
+                        <a href="#">Samsung Galaxy S10 Plus</a>
+                    </div>
+                    <a class="more " href="#">Xem tất cả</a>
+                </div>
+                <div class="list-content-apple">
+                    <div class="row-item row no-gutters">
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/samsung/galaxyA01.png" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>Samsung Galaxy S20 - Chính hãng VN/A </h4>
+                                <a onclick="addToCart({id:'11',image:'./assets/image/samsung/galaxyA01.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/samsung/galaxyA50S.gif" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>Samsung Galaxy A31 - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'12',image:'./assets/image/samsung/galaxyA50S.gif', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/samsung/galaxyA51.png" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>galaxyA51 - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'13',image:'./assets/image/samsung/galaxyA51.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/samsung/galaxyA71.png" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>galaxyA71 - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'14',image:'./assets/image/samsung/galaxyA71.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/samsung/galaxyFold.png" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>galaxyFold - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'15',image:'./assets/image/samsung/galaxyFold.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row-item row no-gutters">
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/samsung/galaxyM21.jpg" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>galaxyM21 - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'16',image:'./assets/image/samsung/galaxyM21.jpg', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/samsung/galaxyNote10.png" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>galaxyNote10 - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'17',image:'./assets/image/samsung/galaxyNote10.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/samsung/galaxyNote10Lite.png" alt="iphone7"
+                                    class="iphone7plus">
+
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>galaxyNote10Lite - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'18',image:'./assets/image/samsung/galaxyNote10Lite.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/samsung/galaxyNote10plus.png" alt="iphone7"
+                                    class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>galaxyNote10plus - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'19',image:'./assets/image/samsung/galaxyNote10plus.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/samsung/galaxyS10plus.png" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>galaxyS10plus - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'20',image:'./assets/image/samsung/galaxyS10plus.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section2 end-->
+            <!-- seccton3 -->
+            <div class="section  ">
+                <div class="box-head row  ">
+                    <a class="box-tittle " href="#">VSMART</a>
+                    <div class="menu-iphone">
+                        <a href="">iPhone 11 series</a>
+                        <a href="">iPhone 11</a>
+                        <a href="">iPhone 11 Pro</a>
+                        <a href="">iPhone 11 Pro Max</a>
+                        <a href="">iPhone Xs Max</a>
+                    </div>
+                    <a class="more " href="#">Xem tất cả</a>
+                </div>
+                <div class="list-content-apple">
+                    <div class="row-item row no-gutters">
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/vsmart/active3_4gb_64gb.png" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>active3_4gb_64gb - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'21',image:'./assets/image/vsmart/active3_4gb_64gb.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/vsmart/active3_6gb_64gb.png" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>active3_6gb_64gb Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'22',image:'./assets/image/vsmart/active3_6gb_64gb.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/vsmart/Bee.jpg" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>Bee - 4gb - 64gb - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'23',image:'./assets/image/vsmart/Bee.jpg', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/vsmart/Bee3.jpg" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>Bee3 - 4gb - 64gb - Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'24',image:'./assets/image/vsmart/Bee3.jpg', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/vsmart/joy2plus_2gb_32gb.png" alt="iphone7"
+                                    class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>joy2plus_2gb_32gb Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'25',image:'./assets/image/vsmart/joy2plus_2gb_32gb.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row-item row no-gutters">
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/vsmart/Joy3_2gb_32gb.png" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>Joy3_2gb_32gb Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'26',image:'./assets/image/vsmart/Joy3_2gb_32gb.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/vsmart/Joy3_4gb_64gb.png" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>Joy3_4gb_64gb Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'27',image:'./assets/image/vsmart/Joy3_4gb_64gb.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/vsmart/live_6gb_64gb.png" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>live_6gb_64gb Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'28',image:'./assets/image/vsmart/live_6gb_64gb.png', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/vsmart/star3_2gb_16gb.jpg" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>star3_2gb_16gb Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'29',image:'./assets/image/vsmart/star3_2gb_16gb.jpg', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list-apple-1">
+                            <div class="list-apple-image-1">
+                                <img src="./assets/image/vsmart/star_2gb_16gb.gif" alt="iphone7" class="iphone7plus">
+                                <div class="overlay">
+                                    <ol>
+                                        <li>
+                                            Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1 đổi 1.Bao xài
+                                            đổi trả trong vòng 15 ngày đầu tiên
+                                        </li>
+                                        <li>
+                                            Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam phân phối
+                                            chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường chính hãng
+                                            VN/A với giá ưu đãi 3.590.000, ...
+                                        </li>
+                                        <li>
+                                            Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose Gold, Gold:
+                                            9.990.000
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <h4>star_2gb_16gb Chính hãng VN/A</h4>
+                                <a onclick="addToCart({id:'30',image:'./assets/image/vsmart/star_2gb_16gb.gif', price:500, name:'Classico 1'})"
+                                    href="#" class="add-cart">
+                                    Thêm vào giỏ
+                                </a>
+                                <div class="product-price">
+                                    <span class="price">9.590.000</span>
+                                    <sup>đ</sup>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- seccton3 end -->
+            <!-- js thông báo -->
+            <script>
+                function addToCart(item) {
+                    item.quantity = 1;
+                    console.log(item.quantity);
+                    var list;
+                    if (localStorage.getItem('cart') == null) {
+                        list = [item];
+                    } else {
+                        list = JSON.parse(localStorage.getItem('cart')) || [];
+                        let ok = true;
+                        for (let x of list) {
+                            if (x.id == item.id) {
+                                x.quantity += 1;
+                                ok = false;
+                                break;
+                            }
+                        }
+                        if (ok) {
+                            list.push(item);
+                        }
+                    }
+                    localStorage.setItem('cart', JSON.stringify(list));
+                    alert("Đã thêm giở hàng thành công");
+                }
+            </script>
+            <!-- js thong bao kethuc -->
+
+        </div>
+    </section>
+    <!-- <select name="" id="">
+        <option value="">sww</option>
+    </select> -->
+    <!-- chân trang -->
+    <footer class="footer">
+        <div class="footer-border">
+            <div class="footer-for row no-gutters">
+                <div class="footer-hlep">
+                    <a href=""> <i class="ti-help-alt"> </i></a>
+                    <span>Hỗ Trợ-Dịch Vụ</span>
+                    <ul>
+                        <li> <a href="#">Hướng dẫn mua hàng </a> </li>
+                        <li> <a href="#">Chính sách mua hàng </a> </li>
+                        <li> <a href="#">Chính sách bảo hành </a> </li>
+                        <li> <a href="#">Gửi phản hồi và ý kiến </a> </li>
+                        <li> <a href="#">Mua hàng từ xa và nhận hàng </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-information">
+                    <a href=""> <i class="ti-info-alt"> </i></a>
+                    <span>Thông Tin Liên Hệ</span>
+                    <ul>
+                        <li>
+                            <a href=""> <i class="ti-location-pin"> </i></a>
+                            <span>Cẩm La-Cẩm Ninh-Ân Thi-Hưng Yên</span>
+                        </li>
+                        <li>
+                            <a href=""> <i class="ti-mobile"> </i></a>
+                            <span>0968996142</span>
+                        </li>
+                        <li>
+                            <a href=""> <i class="ti-email"> </i></a>
+                            <span>Phuchuong20102k1@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-pay">
+                    <a href=""> <i class="ti-shopping-cart-full"> </i></a>
+                    <span>Thanh Toán Miễn Phí</span>
+                    <div class="footer-pay-img">
+                        <img src="./assets/image/masterCard.jpg" alt="thẻ">
+                    </div>
+
+                </div>
+                <div class="footer-email">
+                    <span>Theo Dõi Chúng Tôi</span>
+                    <p>Nhập email để nhận những thông tin hữu ích</p>
+                    <div class="footer-resgister">
+                        <input class="email" type="text" placeholder="Email của bạn...">
+                        <button class="dangki">Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
