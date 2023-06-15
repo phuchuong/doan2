@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/trangchu.css">
+    <link rel="stylesheet" href="./assets/js/main.js">
+    <link rel="stylesheet" href="./assets/js/jquery-3-6-0.min.js">
+    <link rel="stylesheet" href="./assets/js/jquery.min.js">
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
     <title>Cửa hàng điện thoại NPC</title>
  
@@ -16,6 +19,30 @@
 <body>
 
     <header id="header-trangchu">
+
+        <div class="header-top" style="height:20px">
+            <div class="container">
+                <div class="row1">
+                    <!-- BEGIN TOP BAR LEFT PART -->
+                    <div class="col-md-6 col-sm-6 additional-shop-info">
+                        <ul class="list-unstyled list-inline">
+                            <li><i class="fa fa-phone"></i><a href="tel:0362335462" >0362335462</a></li>
+                        </ul>
+                    </div>
+                    <!-- END TOP BAR LEFT PART -->
+                    <!-- BEGIN TOP BAR MENU -->
+                    <div class="col-md-6 col-sm-6 additional-nav">
+                        <ul id="my-user" class="list-unstyled list-inline pull-right">
+                            <li><a href="{{route('faqShow.index')}}">Thắc mắc</a></li> 
+                      
+                            <li><a href="{{route('order.index')}}">Tài khoản</a></li>
+                        </ul>
+                    </div>
+                    <!-- END TOP BAR MENU -->
+                </div>
+            </div>
+        </div>
+        
         <div class="header-bia">
             <nav class="row no-gutters">
                 <div class="header-logo">
@@ -1408,6 +1435,9 @@
             </div>
         </div>
     </footer>
+
+
+
 </body>
 
 </html>
